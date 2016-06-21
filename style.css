@@ -1,22 +1,56 @@
-@font-face {
-    font-family: Hoge;
-    src: url(subset-shs.otf);
+header, section {
+    margin: 4em;
 }
 
-@font-face {
-    font-family: Hoge;
-    src: url(subset-shs-bold.otf);
+header h1 {
+    line-height: 1em;
+    margin-bottom: 0;
+    border-bottom: 1px solid #888;
+}
+
+header h1 small {
+    font-size: 60%;
+    display: inline-block;
+}
+
+header p {
+    margin-top: 0;
+    color: #666;
+}
+
+section h2 {
+    color: #830;
+}
+
+img {
+    width: 90px;
+    height: 120px;
+    margin-left: 1em;
+    margin-right: 20px;
+    box-shadow: 0px 0px 6px #ccc;
+}
+
+.timeline {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.timeline .year {
+    color: #333;
     font-weight: bold;
 }
 
-* {
-    font-family: Hoge;
+.timeline li {
+    margin-bottom: 1em;
 }
 
-body {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAABCAYAAADASJROAAAAKElEQVRIiWPcvHlzBcMoGAWjYFAAX1/fjoF2wyjADUbLy1EwCgYPAAATagaTKIG2NgAAAABJRU5ErkJggg==);
-    background-repeat: repeat-y;
-    background-position: calc(100vw - 660px) 0;
+.timeline .desc.en {
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.skills .desc {
+    color: #777;
 }
 
 b {
@@ -31,66 +65,10 @@ b {
     margin: 1px;
 }
 
-ol.timeline {
-    list-style-type: none;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 8px 10px;
-}
-
-ol.timeline li {
-    display: table-row;
-}
-
-ol.timeline li:first-of-type span.desc {
-    font-weight: bold;
-}
-
-ol.timeline li:not(:first-of-type) {
-    opacity: 0.8;
-}
-
-ol.timeline li div {
-    display: table-cell;
-}
-
-ol.timeline li div span {
-    display: block;
-}
-
-ol.timeline li span.year {
-    display: table-cell;
-    font-weight: bold;
-}
-
-ol.timeline li span.desc.en {
-    color: #666;
-    margin-top: -2px;
-    margin-bottom: 2px;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-ul li::before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    margin-left: -10px;
-    margin-right: 4px;
-    border: 3px solid #9487c0;
-}
-
-ul.skills li span.desc {
-    color: #aaa;
-}
-
 .email {
     font-family: monospace;
     white-space: pre-wrap;
-    border: 1px solid black;
+    border: 1px solid #345;
     border-radius: 10px;
     padding: 8px;
     margin: 10px;
@@ -118,55 +96,81 @@ ul.skills li span.desc {
 #email-result {
     font-style: oblique;
     position: relative;
+    word-break: break-all;
+    color: #999;
 }
 
-header h1 {
-    float: left;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-header p {
-    color: #666;
-    text-align: right;
-}
-
-header p::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-section {
-    margin-bottom: 50px;
-}
-
-section img {
-    width: 90px;
-    height: 120px;
-    float: left;
-    margin-left: 50px;
-    margin-right: 20px;
-    box-shadow: 0px 0px 6px #ccc;
-}
-
-section h2::before {
-    content: "";
-    display: inline-block;
-    width: calc(1em - 16px);
-    height: calc(1em - 16px);
-    border: 8px solid #67a064;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-@media screen and (min-width: 1024px) {
-    body {
-        margin-left: 300px;
+@media screen and (min-width:641px) {
+    img {
+        float: left;
     }
 
-    section p, section ul, section ol:not(.timeline) {
-        margin-left: 50px;
+    .timeline {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 8px 10px;
+    }
+
+    .timeline li {
+        display: table-row;
+    }
+
+    .timeline li > * {
+        display: table-cell;
+    }
+
+    .timeline .year {
+        width: 10em;
+    }
+
+    .timeline .desc {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .email {
+        margin-top: 0;
+        margin-left: 3em;
+        font-size: 130%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header, section {
+        margin: 0;
+    }
+
+    section h2 {
+        width: 100%;
+        padding: 0.3em;
+        padding-top: 1em;
+        box-sizing: border-box;
+        border-top: 2px dashed #888;
+        text-align: center;
+    }
+
+    a {
         max-width: 100%;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    img {
+        margin-left: calc(50% - 45px);
+    }
+
+    .timeline .desc {
+        display: block;
+    }
+
+    #email-result {
+        display: block;
+        height: 5em;
+    }
+
+    .email {
+        margin: 0;
+        margin-bottom: 5em;
     }
 }
