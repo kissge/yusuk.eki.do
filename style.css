@@ -13,8 +13,9 @@ header h1 small {
     display: inline-block;
 }
 
-header p {
+header p.small {
     margin-top: 0;
+    margin-bottom: 3em;
     color: #666;
 }
 
