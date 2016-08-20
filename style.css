@@ -36,7 +36,7 @@ img {
     padding-left: 1em;
 }
 
-.timeline .year {
+.timeline .year, .timeline .single-year {
     color: #333;
     font-weight: bold;
 }
@@ -122,6 +122,10 @@ b {
 
     .timeline .year {
         width: 10em;
+    }
+
+    .timeline .single-year {
+        width: 6em;
     }
 
     .timeline .desc {
