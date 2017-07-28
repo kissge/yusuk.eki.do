@@ -15,20 +15,11 @@ header h1 small {
 
 header p.small {
     margin-top: 0;
-    margin-bottom: 3em;
     color: #666;
 }
 
 section h2 {
     color: #830;
-}
-
-img {
-    width: 90px;
-    height: 120px;
-    margin-left: 1em;
-    margin-right: 20px;
-    box-shadow: 0px 0px 6px #ccc;
 }
 
 .timeline {
@@ -101,6 +92,26 @@ b {
     color: #999;
 }
 
+a:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    padding: 0;
+}
+
+.social-links a {
+    color: #24256f;
+}
+
+.social-links li {
+    list-style: none;
+    font-size: 32px;
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+}
+
 @media screen and (min-width:641px) {
     img {
         float: left;
@@ -138,6 +149,10 @@ b {
         margin-left: 3em;
         font-size: 130%;
     }
+
+    section > p {
+        margin-left: 3em;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -154,7 +169,7 @@ b {
         text-align: center;
     }
 
-    a {
+    li a {
         max-width: 100%;
         display: inline-block;
         overflow: hidden;
@@ -174,8 +189,7 @@ b {
         height: 5em;
     }
 
-    .email {
-        margin: 0;
-        margin-bottom: 5em;
+    .social-links {
+        text-align: center;
     }
 }
