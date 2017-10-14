@@ -2,6 +2,10 @@ header, section {
     margin: 4em;
 }
 
+ol, ul {
+    padding-right: 30px;
+}
+
 header h1 {
     line-height: 1em;
     margin-bottom: 0;
@@ -18,6 +22,10 @@ header p.small {
     color: #666;
 }
 
+section {
+    text-align: justify;
+}
+
 section h2 {
     color: #830;
 }
@@ -25,6 +33,7 @@ section h2 {
 .timeline {
     list-style-type: none;
     padding-left: 1em;
+    padding-right: 1em;
 }
 
 .timeline .year, .timeline .single-year {
@@ -36,9 +45,12 @@ section h2 {
     margin-bottom: 1em;
 }
 
+.desc {
+    line-height: 1.7em;
+}
+
 .timeline .desc.en {
     color: #666;
-    margin-bottom: 0.5em;
 }
 
 .skills .desc {
@@ -148,6 +160,10 @@ a:hover {
         margin-top: 0;
         margin-left: 3em;
         font-size: 130%;
+    }
+
+    section > p {
+        margin-left: 3em;
     }
 
     section > p {
