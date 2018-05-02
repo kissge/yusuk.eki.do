@@ -1,3 +1,7 @@
+body {
+    font-family: Times, serif;
+}
+
 header, section {
     margin: 4em;
 }
@@ -70,7 +74,7 @@ b {
 }
 
 .email {
-    font-family: monospace;
+    font-family: Consolas, monospace;
     white-space: pre-wrap;
     border: 1px solid #345;
     border-radius: 10px;
@@ -87,7 +91,6 @@ b {
 }
 
 .email .blank {
-    font-family: monospace;
     display: inline-block;
     border: 1px dotted #ccc;
     border-radius: 8px;
@@ -114,6 +117,8 @@ a:hover {
 
 .social-links a {
     color: #24256f;
+    text-decoration: none;
+    overflow: visible;
 }
 
 .social-links li {
@@ -141,6 +146,11 @@ a:hover {
 
     .timeline li > * {
         display: table-cell;
+        vertical-align: top;
+    }
+
+    .timeline li > span {
+        padding-top: 4px;
     }
 
     .timeline .year {
