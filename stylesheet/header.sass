@@ -1,0 +1,142 @@
+header
+  position: sticky
+  top: -1px
+  z-index: 10
+  display: flex
+  align-items: center
+  justify-content: space-around
+  margin: calc(50vh - 120px) 0
+  padding: 20px
+  background: #f0e1e4
+  page-break-after: always
+
+  backdrop-filter: blur(10px)
+  @include for-smaller-screen
+    position: unset
+    display: block
+    margin: 2em 0
+    text-align: center
+
+  @supports ((backdrop-filter: blur(5px)))
+    background: unset
+
+  h1
+    flex: 1 1 100px
+    margin-right: 80px
+    text-align: right
+    letter-spacing: 0.4em
+    font-weight: 100
+    font-size: 48px
+
+    @include for-smaller-screen
+      margin: 0
+      text-align: center
+      letter-spacing: unset
+
+    small
+      display: block
+      margin-right: 0.8em
+      letter-spacing: 0.05em
+      font-size: 24px
+
+      @include for-smaller-screen
+        margin: 0
+
+  ul
+    display: block
+    flex: 1 1 100px
+    margin-left: 80px
+    text-align: left
+    font-size: 48px
+
+    @include for-smaller-screen
+      margin: 0
+      text-align: center
+      font-size: 24px
+
+    li
+      display: inline-block
+      margin: 12px
+      list-style: none
+
+      user-select: none
+
+      a
+        color: #1b1b92
+        text-decoration: none
+
+  svg
+    width: 200px
+    height: 200px
+    transition: all 0.5s
+
+    @include for-smaller-screen
+      margin: 40px 0
+      width: 200px !important
+      height: 200px !important
+
+    > g
+      > *
+        transition: all 0.5s
+
+      &:hover >
+        :nth-child(1)
+          opacity: 0
+
+        :nth-child(2)
+          opacity: 0.2
+
+        :nth-child(4)
+          transition-delay: 0.1s
+          transform: translateY(-30px)
+
+        :nth-child(5)
+          transform: translateX(-40px)
+
+  &.fever
+    background: linear-gradient(90deg, #d6bd8777 0%, #e0525277 25%, #fcb04577 50%, #e0525277 75%, #d6bd8777 100%)
+    background-size: 30%
+    animation: 0.15s linear infinite fever
+
+    li
+      position: relative
+      animation: 0.125s ease-in-out infinite alternate wave
+
+      &:nth-child(1)
+        animation-delay: 0.05s
+      &:nth-child(2)
+        animation-delay: 0.1s
+      &:nth-child(3)
+        animation-delay: 0.15s
+      &:nth-child(4)
+        animation-delay: 0.2s
+      &:nth-child(5)
+        animation: 0.8s appear, 0.125s ease-in-out 0.25s infinite alternate wave
+
+.header-stuck
+  header
+    box-shadow: 0 8px 8px -8px #000
+
+    @include for-smaller-screen
+      box-shadow: none
+
+    svg
+      width: 72px
+      height: 72px
+
+@keyframes fever
+  from
+    background-position: -15%
+  to
+    background-position: 0%
+
+@keyframes appear
+  from
+    opacity: 0
+    transform: scale(0)
+
+@keyframes wave
+  from
+    top: -10px
+  to
+    top: 10px

@@ -1,0 +1,111 @@
+.timeline
+  ol
+    display: grid
+
+    grid-template-columns: 1fr 50px 1fr
+    @include for-smaller-screen
+      display: block
+
+      li
+        display: block
+
+    .timeline-spine
+      grid-column: 2 / 3
+      grid-row: 1 / 1000
+      @include for-smaller-screen
+        display: none
+
+      &::before
+        z-index: -2
+        display: block
+        margin: 10px
+        height: 100%
+        border: 1px solid #2139a5
+        border-radius: 24px
+        content: ''
+
+    >
+      .timeline-item-left, .timeline-item-right
+        min-height: 100px
+
+        @include for-smaller-screen
+          overflow: hidden
+          min-height: 0
+
+        @for $i from 2 through 4
+          &.span-#{$i}
+            grid-row-end: span #{$i}
+
+      .timeline-item-left > div, .timeline-item-right > div
+        display: inline-block
+        margin: 10px
+        padding: 1em
+        max-width: calc(50vw - 50px / 2 - 10px * 2 - 1em * 2 - 3px - 9px)
+        width: 500px
+
+        @include for-smaller-screen
+          margin: 0
+          max-width: inherit
+          width: calc(100% - 1em * 2)
+          border: none !important
+
+      .timeline-item-left
+        text-align: right
+
+        grid-column: 1 / 2
+        @include for-smaller-screen
+          text-align: left
+
+        > div
+          border-right: 3px solid #9c9ceb66
+
+        .date::after
+          right: calc(50vw - 6px)
+
+      .timeline-item-right
+        grid-column: 3 / 4
+
+        > div
+          border-left: 3px solid #bd9ada66
+
+        .date::after
+          left: calc(50vw - 6px)
+
+    p, h2
+      margin: 0.35em 0
+      line-height: 1.2
+
+      &.date
+        &:not(:first-child)
+          margin-top: 1em
+
+        &:first-child::after
+          position: absolute
+          z-index: -1
+          display: block
+          width: 48px
+          border-top: 3px solid #d6d6d6
+          content: ''
+          transform: translateY(-10px)
+
+          @include for-smaller-screen
+            display: none
+
+      &.title[lang='ja']
+        font-weight: 400
+
+      &.keywords
+        color: #6363be
+        font-style: italic
+
+    b
+      display: block
+      margin: 0.3em 0 0.8em 0
+      color: #9b1b1b
+      font-weight: 600
+      font-size: 0.85em
+
+      &::before
+        margin-right: 5px
+        content: "\f521"
+        font-family: "Font Awesome 5 Free"

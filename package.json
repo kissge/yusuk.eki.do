@@ -1,0 +1,24 @@
+{
+  "name": "yusuk.eki.do",
+  "version": "3.0.0",
+  "description": "My personal webpage",
+  "scripts": {
+    "start": "parcel index.pug",
+    "build": "parcel build index.pug --no-source-maps"
+  },
+  "author": "Yusuke Kido",
+  "license": "GPL",
+  "dependencies": {
+    "@chunpu/xor": "^1.0.0",
+    "reset.css": "^2.0.2",
+    "sortablejs": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "0.0.3",
+    "@types/sortablejs": "^1.10.4",
+    "parcel": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.26.8",
+    "typescript": "^3.9.5"
+  }
+}

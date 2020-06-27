@@ -1,0 +1,25 @@
+doctype html
+html(lang='ja')
+
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  title 城戸 祐亮 / Yusuke Kido / きど ゆうすけ
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;600&display=swap')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/brands.min.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/solid.min.css')
+  link(rel='stylesheet', href='stylesheet/circle.sass')
+  script(src='./script/index.ts')
+  script(async, src='https://www.googletagmanager.com/gtag/js?id=UA-64735116-1')
+
+  include pug/header.pug
+
+  include pug/timeline.pug
+  include pug/pubs.pug
+  include pug/interests.pug
+  include pug/email.pug
+
+  footer
+    | document.lastModified = '
+    a(href='https://github.com/kissge/yusuk.eki.do/commit/')
+      script document.write(document.lastModified)
+    |';
