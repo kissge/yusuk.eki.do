@@ -1,0 +1,4 @@
+@mixin for-smaller-screen
+  // Though named `smaller', applying same hacks for printing and IE
+  @media screen and (max-width: 1000px), print, screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
+    @content

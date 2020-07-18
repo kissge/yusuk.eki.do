@@ -1,9 +1,5 @@
 @import 'reset.css'
-
-@mixin for-smaller-screen
-  // Though named `smaller', applying same hacks for printing and IE
-  @media screen and (max-width: 1000px), print, screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
-    @content
+@import 'mixins.sass'
 
 body
   background: linear-gradient(to bottom, #f5e1e5 0%, #e4e1e1 44%, #faf1f0 100%)
@@ -54,4 +50,4 @@ em
 .break-all
   word-break: break-all
 
-@import 'icons.sass', 'header.sass', 'timeline.sass', 'pubs.sass', 'interests.sass', 'email.sass'
+@import 'icons.sass', 'header.sass'

@@ -4,11 +4,11 @@ html(lang='ja')
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1')
   title 城戸 祐亮 / Yusuke Kido / きど ゆうすけ
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;600&display=swap')
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/brands.min.css')
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/solid.min.css')
-  link(rel='stylesheet', href='stylesheet/circle.sass')
-  script(src='./script/index.ts')
+  link(as='style', href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;600&display=swap', rel='preload')
+  link(as='style', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/brands.min.css', rel='preload')
+  link(as='style', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/solid.min.css', rel='preload')
+  link(rel='stylesheet', href='stylesheet/critical.sass')
+  link(as='style', href='stylesheet/non-critical.sass', rel='preload')
   script(async, src='https://www.googletagmanager.com/gtag/js?id=UA-64735116-1')
 
   include pug/header.pug
@@ -23,3 +23,5 @@ html(lang='ja')
     a(href='https://github.com/kissge/yusuk.eki.do/commit/')
       script document.write(document.lastModified)
     |';
+
+  script(src='./script/index.ts')
