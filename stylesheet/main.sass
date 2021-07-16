@@ -1,0 +1,79 @@
+@import 'reset.css'
+
+html
+    scroll-snap-type: y proximity
+
+body
+    background-color: white
+    font-family: 'Yrsa', serif
+
+section
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 100vh
+    color: white
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25)
+
+    scroll-snap-align: start
+
+.static
+    position: fixed
+
+.me
+    position: absolute
+    top: 5%
+    left: -25%
+    width: 180%
+    height: 115%
+    background-image: url('../image/me-on-pc-02.svg')
+    background-position: left bottom
+    background-size: 77%
+    background-repeat: no-repeat
+
+.monitor
+    position: absolute
+    bottom: 27.2vw
+    left: 26.4vw
+    overflow: hidden
+    padding: 1em
+    width: 31.7vw
+    height: 24.9vw
+    border: 0.1vw solid #666
+    border-radius: 1em
+    background: rgba(255, 255, 255, 1)
+    color: rgb(0, 255, 0)
+    text-align: justify
+    font-size: large
+    font-family: monospace
+    transform: perspective(78vw) rotateY(46deg)
+
+.rect
+    position: absolute
+    top: 0
+    left: 30%
+    width: 100vw
+    height: 400vh
+    background-color: #ef8035
+    transform: translateY(-50%) rotate(-30deg)
+
+.upper-right
+    position: absolute
+    top: 50px
+    right: 50px
+    width: 56vw
+    text-align: right
+
+    h1
+        margin-bottom: 30px
+        font-size: 8vw
+        font-family: 'Rozha One', serif
+
+    p
+        font-size: 2vw
+
+    a
+        color: currentColor
+
+section:nth-of-type(2) p
+    font-size: 3vw

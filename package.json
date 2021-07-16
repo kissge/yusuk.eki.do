@@ -1,0 +1,19 @@
+{
+  "name": "yusuk.eki.do",
+  "version": "4.0.0",
+  "description": "My personal webpage",
+  "scripts": {
+    "start": "parcel index.pug",
+    "build": "parcel build index.pug --no-source-maps"
+  },
+  "author": "Yusuke Kido",
+  "license": "MIT",
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  }
+}
