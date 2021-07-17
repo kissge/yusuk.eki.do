@@ -42,14 +42,20 @@ section
     height: 24.9vw
     border: 0.1vw solid #666
     border-radius: 1em
-    // background: rgba(255, 255, 255, 1)
-    background: black
+    background: white
     color: rgb(0, 255, 0)
     text-align: justify
     word-break: break-all
     font-size: large
     font-family: monospace
+    transition: opacity 1s linear
     transform: perspective(78vw) rotateY(46deg)
+
+    &.hide
+        opacity: 0
+
+    &.developer
+        background: black
 
 .rect
     position: absolute
