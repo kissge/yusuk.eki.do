@@ -8,17 +8,18 @@ body
     font-family: 'Yrsa', serif
 
 section
-    position: relative
-    overflow: hidden
+    // overflow: hidden
+    min-height: 100vh
     width: 100%
-    height: 100vh
-    color: white
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25)
+    // text-shadow: 0 0 4px rgba(255,255,255, 0.25)
+    // height: 100vh
+    color: #222
 
     scroll-snap-align: start
 
 .static
     position: fixed
+    z-index: -1
 
 .me
     position: absolute
@@ -41,9 +42,11 @@ section
     height: 24.9vw
     border: 0.1vw solid #666
     border-radius: 1em
-    background: rgba(255, 255, 255, 1)
+    // background: rgba(255, 255, 255, 1)
+    background: black
     color: rgb(0, 255, 0)
     text-align: justify
+    word-break: break-all
     font-size: large
     font-family: monospace
     transform: perspective(78vw) rotateY(46deg)
@@ -58,22 +61,96 @@ section
     transform: translateY(-50%) rotate(-30deg)
 
 .upper-right
-    position: absolute
-    top: 50px
-    right: 50px
+    display: flex
+    flex-direction: column
+    margin-left: calc(100% - 100px - 56vw)
+    padding: 50px
+    min-height: calc(100vh - 50px * 2)
     width: 56vw
+    height: calc(100% - 50px * 2)
     text-align: right
 
+    &.narrow
+        margin-left: calc(100% - 100px - 500px)
+        max-width: 500px
+
     h1
-        margin-bottom: 30px
-        font-size: 8vw
+        margin-bottom: 2rem
+        font-size: 8rem
         font-family: 'Rozha One', serif
+        line-height: 0.8
 
     p
-        font-size: 2vw
+        font-size: 3rem
+
+    .spacer
+        flex-basis: 2em
+        flex-grow: 1
+
+    h2
+        margin: 0.5em 0
+        font-size: 2.5rem
+
+    h3
+        margin: 0.5em 0
+        font-size: 2rem
+
+    .icons
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        list-style: none
+        font-weight: bold
+        font-family: sans-serif
+        direction: ltr
+
+        a
+            text-decoration: none
+
+        .icon
+            margin: 0 0.2em
+            width: 3rem
+            vertical-align: bottom
+            font-size: 3rem
+
+    ul
+        list-style-type: circle
+        direction: rtl
+
+        li
+            margin-top: 0.5em
+
+            > *
+                line-height: 1.5
+                direction: ltr
+
+        .date
+            font-size: 0.8rem
+
+        .item-ja
+            font-size: 1rem
+
+        .item-en
+            font-size: 1rem
+
+        .item-tech
+            font-style: italic
+            opacity: 0.7
+
+    ol
+        list-style: decimal
+        text-align: left
+
+        em
+            text-decoration: underline
+            font-weight: bold
+
+    span
+        background-color: #ef803588
+        line-height: 1.3
 
     a
         color: currentColor
 
 section:nth-of-type(2) p
-    font-size: 3vw
+    font-size: 4.5rem
