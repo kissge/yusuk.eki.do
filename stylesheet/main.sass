@@ -1,7 +1,8 @@
 @import 'reset.css'
 
 html
-    scroll-snap-type: y proximity
+    scroll-snap-type: y mandatory
+    scroll-behavior: smooth
 
 body
     background-color: white
@@ -48,6 +49,10 @@ section
 
     &.hide
         opacity: 0
+
+    &.color-bar
+        background-image: url(../image/SMPTE_Color_Bars.svg)
+        background-size: cover
 
     &.developer
         padding: 1em
@@ -169,3 +174,6 @@ section
 
 section:nth-of-type(2) p
     font-size: 4.5rem
+
+a:hover
+    color: white
