@@ -37,17 +37,12 @@ section
     bottom: 27.2vw
     left: 26.4vw
     overflow: hidden
-    padding: 1em
+    box-sizing: border-box
     width: 31.7vw
     height: 24.9vw
     border: 0.1vw solid #666
     border-radius: 1em
     background: white
-    color: rgb(0, 255, 0)
-    text-align: justify
-    word-break: break-all
-    font-size: large
-    font-family: monospace
     transition: opacity 1s linear
     transform: perspective(78vw) rotateY(46deg)
 
@@ -55,7 +50,17 @@ section
         opacity: 0
 
     &.developer
+        padding: 1em
         background: black
+        color: rgb(0, 255, 0)
+        word-break: break-all
+        font-size: x-small
+        font-family: monospace
+
+    &.designer
+        canvas
+            width: 100% !important
+            height: 100% !important
 
 .rect
     position: absolute

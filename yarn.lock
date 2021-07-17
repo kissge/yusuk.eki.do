@@ -1603,6 +1603,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.2.tgz#655432817f83b51ac869c2d51dd8305fb8342e16"
   integrity sha512-jJs9ErFLP403I+hMLGnqDRWT0RYKSvArxuBVh2veudHV7ifEC1WAmjJADacZ7mRbA2nWgHtn8xyECMAot0SkAw==
 
+"@types/p5@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@types/p5/-/p5-1.3.0.tgz#7c3254961b176d7f87060c5352ec25ddb2478f9c"
+  integrity sha512-Bdaq60LErR9DD8083HpSFs7EoNcrsIZTp7xm7tCn4f7frT83gaeAR31tMFIdX02IS1oCKuKOHOadQvbYXHwZPg==
+
 "@types/q@^1.5.1":
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
@@ -4529,6 +4534,11 @@ os-browserify@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
   integrity sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc=
+
+p5@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-1.4.0.tgz#d4d0f001c297525831861af5e017cdb5ef517a75"
+  integrity sha512-U888W2ChcIzPhRhnv4FkNhaa4f5BDIWZfLhzvx9ZrQ5KtkZr/+o1UPIicV3yWTRy0HEG23NviHyDR3kgjaJ9wA==
 
 pako@~1.0.5:
   version "1.0.11"

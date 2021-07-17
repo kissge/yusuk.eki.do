@@ -4,7 +4,7 @@ const argMinIndex = <T>(items: T[], key: (item: T) => number) => {
   return keys.indexOf(min);
 };
 
-window.addEventListener('scroll', (event) => {
+const scrollEventListener = () => {
   const scrollY = window.scrollY;
   const closest = argMinIndex(
     Array.from(document.querySelectorAll<HTMLElement>('section:not(:nth-of-type(1))')),
@@ -12,13 +12,9 @@ window.addEventListener('scroll', (event) => {
   );
 
   document.querySelectorAll<HTMLElement>('.monitor').forEach((m, i) => m.classList.toggle('hide', i !== closest));
-});
+};
+window.addEventListener('scroll', scrollEventListener);
+scrollEventListener();
 
-const monitor = document.querySelector('.monitor.developer');
-const words = document.querySelector('html').outerHTML;
-let i = 0;
-setInterval(() => {
-  monitor.textContent = words.slice(0, i);
-  i = (i + 1) % words.length;
-  monitor.scrollBy(0, 10000);
-}, 10);
+import './developer';
+import './designer';
