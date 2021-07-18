@@ -1,6 +1,8 @@
 @import 'reset.css'
 
 html
+    font-size: 0.625vw
+
     scroll-snap-type: y mandatory
     scroll-behavior: smooth
 
@@ -24,10 +26,10 @@ section
 
 .me
     position: absolute
-    top: 5%
+    top: 2vw
     left: -25%
     width: 180%
-    height: 115%
+    height: calc(100% + 2vw * 2)
     background-image: url('../image/me-on-pc-02.svg')
     background-position: left bottom
     background-size: 77%
@@ -91,25 +93,25 @@ section
 .upper-right
     display: flex
     flex-direction: column
-    margin-left: calc(100% - 100px - 56vw)
-    padding: 50px
-    min-height: calc(100vh - 50px * 2)
+    margin-left: calc(100% - 2vw * 2 - 56vw)
+    padding: 2vw
+    min-height: calc(100vh - 2vw * 2)
     width: 56vw
-    height: calc(100% - 50px * 2)
+    height: calc(100% - 2vw * 2)
     text-align: right
 
     &.narrow
-        margin-left: calc(100% - 100px - 500px)
-        max-width: 500px
+        margin-left: calc(100% - 2vw * 2 - 30vw)
+        max-width: 30vw
 
     h1
         margin-bottom: 2rem
-        font-size: 8rem
+        font-size: 5vw
         font-family: 'Rozha One', serif
         line-height: 0.8
 
     p
-        font-size: 3rem
+        font-size: 1.9vw
 
     .spacer
         flex-basis: 2em
@@ -117,11 +119,11 @@ section
 
     h2
         margin: 0.5em 0
-        font-size: 2.5rem
+        font-size: 1.6vw
 
     h3
         margin: 0.5em 0
-        font-size: 2rem
+        font-size: 1.25vw
 
     .icons
         display: flex
@@ -137,9 +139,9 @@ section
 
         .icon
             margin: 0 0.2em
-            width: 3rem
+            width: 2vw
             vertical-align: bottom
-            font-size: 3rem
+            font-size: 2vw
 
     ul
         list-style-type: circle
@@ -153,21 +155,22 @@ section
                 direction: ltr
 
         .date
-            font-size: 0.8rem
+            font-size: 0.5vw
 
         .item-ja
-            font-size: 1rem
+            font-size: 0.625vw
 
         .item-en
-            font-size: 1rem
+            font-size: 0.625vw
 
         .item-tech
             font-style: italic
+            font-size: 0.625vw
             opacity: 0.7
 
     ol
         list-style: decimal
-        text-align: left
+        text-align: justify
 
         em
             text-decoration: underline
@@ -181,7 +184,7 @@ section
         color: currentColor
 
 section:nth-of-type(2) p
-    font-size: 4.5rem
+    font-size: 2.8vw
 
 a:hover
     color: white
