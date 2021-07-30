@@ -63,6 +63,7 @@ section
     &.developer
         padding: 1em
         padding-top: 4.5%
+        padding-left: 2em
         background: black url(../image/flattend_ipa.png)
         background-position: 90% center
         background-size: 10vw
@@ -193,3 +194,15 @@ section
 
 a:hover
     color: white
+
+.fever
+    .monitor.top
+        background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,153,0,1) 12%, rgba(255,212,0,1) 27%, rgba(0,255,64,1) 40%, rgba(0,22,255,1) 50%, rgba(0,9,255,1) 60%, rgba(141,0,255,1) 68%, rgba(235,0,255,1) 77%, rgba(255,0,0,1) 88%)
+        background-size: 200% 200%
+        animation: rainbow 0.5s linear infinite
+
+@keyframes rainbow
+    0%
+        background-position: 200% 0%
+    100%
+        background-position: 0% 0%
