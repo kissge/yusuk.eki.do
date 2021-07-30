@@ -81,7 +81,7 @@ new p5((s) => {
         const ox = s.noise(x, y, 1) * grid * gf;
         const oy = s.noise(x, y, 2) * grid * gf;
         s.image(
-          icons[Math.floor(s.noise(x, y, 3) * icons.length)],
+          icons[Math.floor(s.noise(x, y, 3) * icons.length * icons.length) % icons.length],
           x * grid + ox + (y % 2 ? grid / 2 : 0) - 80,
           y * grid + oy - 80,
           160,

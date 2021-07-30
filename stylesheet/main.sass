@@ -11,9 +11,11 @@ body
     font-family: 'Yrsa', serif
 
 section
+    position: relative
+    margin-left: 30%
     // overflow: hidden
     min-height: 100vh
-    width: 100%
+    width: 70%
     // text-shadow: 0 0 4px rgba(255,255,255, 0.25)
     // height: 100vh
     color: #222
@@ -22,14 +24,15 @@ section
 
 .static
     position: fixed
-    z-index: -1
+    margin-left: 0
+    width: 100%
 
 .me
     position: absolute
-    top: 2vw
+    top: 0
     left: -25%
     width: 180%
-    height: calc(100% + 2vw * 2)
+    height: calc(100% + 12vw)
     background-image: url('../image/me-on-pc-02.svg')
     background-position: left bottom
     background-size: 77%
@@ -51,17 +54,22 @@ section
 
     &.hide
         opacity: 0
+        pointer-events: none
 
-    &.color-bar
-        background-image: url(../image/SMPTE_Color_Bars.svg)
+    &.top
+        background-image: url(../image/top.png)
         background-size: cover
 
     &.developer
         padding: 1em
-        background: black
+        padding-top: 4.5%
+        background: black url(../image/flattend_ipa.png)
+        background-position: 90% center
+        background-size: 10vw
+        background-repeat: no-repeat
         color: rgb(0, 255, 0)
-        word-break: break-all
-        font-size: x-small
+        white-space: pre
+        font-size: 0.425vw
         font-family: monospace
 
     &.designer
@@ -182,9 +190,6 @@ section
 
     a
         color: currentColor
-
-section:nth-of-type(2) p
-    font-size: 2.8vw
 
 a:hover
     color: white
