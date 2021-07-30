@@ -4,7 +4,7 @@
   "description": "My personal webpage",
   "scripts": {
     "start": "parcel index.pug",
-    "build": "parcel build index.pug --no-source-maps"
+    "build": "parcel build index.pug --no-source-maps --no-scope-hoist"
   },
   "author": "Yusuke Kido",
   "license": "MIT",
