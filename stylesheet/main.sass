@@ -46,45 +46,32 @@ section
     box-sizing: border-box
     width: 31.7vw
     height: 24.9vw
-    border: 0.1vw solid #666
+    border: none
     border-radius: 1em
     background: white
     transition: opacity 1s linear
     transform: perspective(78vw) rotateY(46deg)
 
-    &.hide
+    &.hide:not(.top)
         opacity: 0
         pointer-events: none
 
     &.top
-        background: white
-
-    &.developer
-        padding: 1em
-        padding-top: 4.5%
-        padding-left: 2em
-        background: #222 url(../image/flattend_ipa.png)
-        background-position: 90% center
-        background-size: 10vw
-        background-repeat: no-repeat
-        color: rgb(0, 255, 0)
-        white-space: pre
-        font-size: 0.425vw
-        font-family: monospace
+        background-image: url(../image/empty-pc-01.svg)
+        background-size: cover
 
     &.designer
-        border: none
         canvas
             width: 100% !important
             height: 100% !important
 
     &.nlper
         border: none
-        background-image: url(../image/nlp-pc-01.png)
+        background-image: url(../image/nlp-pc-01.svg)
         background-size: cover
 
     &.pub
-        background-image: url(../image/top.png)
+        background-image: url(../image/hp-pc-01.svg)
         background-size: cover
 
 .rect

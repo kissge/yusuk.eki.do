@@ -17,6 +17,5 @@ window.addEventListener('scroll', scrollEventListener);
 scrollEventListener();
 
 import './gtag';
-import './developer';
 import './designer';
 import './mystery';
