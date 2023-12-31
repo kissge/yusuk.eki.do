@@ -1,0 +1,36 @@
+@import 'npm:more-modern-css-reset';
+
+* {
+  text-wrap: pretty;
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Calibri, 'Trebuchet MS', 'Zen Kaku Gothic New', sans-serif;
+}
+
+body {
+  padding-bottom: 4rem;
+  color: #112;
+  background: url('wood.webp');
+  background-position: center center;
+  background-size: contain;
+}
+
+a[class],
+a:not([class]) {
+  color: #3434f0;
+  text-decoration-color: #5a5adf20;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 3px #fff);
+  }
+}

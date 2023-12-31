@@ -1,0 +1,67 @@
+.lists {
+  display: grid;
+  grid-template-columns: 23% 1fr;
+  max-width: min(60rem, 100% - 1.5rem * 2);
+  padding: 1.5rem 3rem;
+  margin: 6rem auto;
+  background: #fff6;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px 20px #fff6;
+
+  > :last-child {
+    padding-top: 0.5em;
+  }
+
+  li:nth-child(n + 2) {
+    margin-top: 0.5em;
+  }
+}
+
+.pubs {
+  margin: 1em 0;
+
+  li {
+    font-family: serif;
+    text-align: justify;
+  }
+
+  li:lang(ja) {
+    word-break: break-all;
+  }
+
+  em {
+    font-weight: 900;
+  }
+}
+
+.career {
+  list-style: none;
+
+  p {
+    margin: 0;
+  }
+
+  p:lang(en) {
+    margin-bottom: 0.8em;
+    font-size: 0.8em;
+    color: #445;
+  }
+
+  time {
+    margin-left: -2em;
+    letter-spacing: 0.025em;
+  }
+}
+
+.facts {
+  li {
+    text-align: justify;
+  }
+}
+
+@media (width <=800px) {
+  .lists {
+    display: block;
+    padding: 1rem;
+  }
+}

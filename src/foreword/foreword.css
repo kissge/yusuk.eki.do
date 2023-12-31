@@ -1,0 +1,67 @@
+.foreword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100lvh;
+  padding: 1.5rem calc(max(1.5rem, (100% - 60rem) / 2));
+  text-shadow: 0 0 10px #a227;
+
+  svg {
+    max-height: 30lvh;
+    fill: currentcolor;
+  }
+
+  h1 {
+    font-size: calc(min(3rem, 8vw));
+    font-weight: 100;
+    letter-spacing: 0.05em;
+
+    @supports not (text-wrap: balance) {
+      word-break: keep-all;
+    }
+  }
+
+  strong {
+    font-weight: 900;
+
+    @supports not (text-wrap: balance) {
+      word-break: keep-all;
+    }
+  }
+
+  small {
+    /* 開きかっこのツメ調整 */
+    margin-left: -0.25em;
+    font-size: inherit;
+    text-wrap: nowrap;
+    word-break: keep-all;
+    opacity: 0.6;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: 0.06em;
+
+    @media (width <= 800px) {
+      /**
+       * justify + auto-phraseは和文が間延びする
+       * ただし、break-allにするとSafariで禁則処理が効かなくなるようだ
+       * cf. https://type-any.com/blog/linebreak-strict-not-working-ios-with-wordbreak-breakall
+       */
+      word-break: break-word;
+    }
+
+    span {
+      word-break: auto-phrase;
+      word-break: keep-all;
+    }
+  }
+
+  @supports (text-wrap: balance) {
+    wbr {
+      display: none;
+    }
+  }
+}

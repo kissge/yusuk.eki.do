@@ -1,24 +1,52 @@
 {
   "name": "yusuk.eki.do",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "My personal webpage",
   "scripts": {
-    "start": "parcel index.pug",
-    "build": "parcel build index.pug --no-source-maps --no-scope-hoist --no-optimize"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug --no-source-maps",
+    "format": "prettier . --write",
+    "lint": "prettier . --check && stylelint src/**/*.css"
   },
-  "author": "Yusuke Kido",
+  "author": "Yusuke Kido <mail@yusuk.eki.do>",
   "license": "MIT",
   "dependencies": {
-    "@chunpu/xor": "^1.0.0",
-    "p5": "^1.4.0",
-    "reset.css": "^2.0.2",
-    "sortablejs": "^1.14.0"
+    "more-modern-css-reset": "^1.0.0"
   },
   "devDependencies": {
-    "@parcel/transformer-pug": "2.0.0-beta.2",
-    "@parcel/transformer-sass": "2.0.0-beta.2",
-    "@types/p5": "^1.3.0",
-    "@types/sortablejs": "^1.10.7",
-    "parcel": "^2.0.0-beta.2"
+    "@parcel/core": "^2.10.3",
+    "@parcel/packager-raw-url": "^2.10.3",
+    "@parcel/transformer-jsonld": "^2.10.3",
+    "@parcel/transformer-pug": "2.10.3",
+    "@prettier/plugin-pug": "^3.0.0",
+    "parcel": "^2.10.3",
+    "prettier": "^3.1.1",
+    "stylelint": "^16.1.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^5.0.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "plugins": [
+      "@prettier/plugin-pug"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-recess-order",
+      "stylelint-prettier/recommended"
+    ],
+    "rules": {
+      "import-notation": null,
+      "no-descending-specificity": null
+    }
+  },
+  "htmlnano": {
+    "minifySvg": false
   }
 }

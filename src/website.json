@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "yusuk.eki.do",
+  "url": "https://yusuk.eki.do/",
+  "author": {
+    "@type": "Person",
+    "name": "Yusuke Kido"
+  }
+}
