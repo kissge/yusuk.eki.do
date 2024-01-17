@@ -1,4 +1,5 @@
 @import 'npm:more-modern-css-reset';
+@import 'fonts.css';
 
 * {
   text-wrap: pretty;
