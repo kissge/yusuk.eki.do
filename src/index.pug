@@ -9,12 +9,17 @@ html(lang='ja')
     script(type='application/ld+json')
       include ./website.json
     title 城戸 祐亮 / Yusuke Kido / きど ゆうすけ
-    link(rel='stylesheet', href='index.css')
     link(rel='icon', href='./card/me.svg')
     script(async, src='https://www.googletagmanager.com/gtag/js?id=G-WKM0LRK8M3')
+    style
+      | @import './base.css';
+      | @import './card/card.css';
 
   body
     include ./card/card.pug
+
+    link(rel='stylesheet', href='index.css')
+
     include ./foreword/foreword.pug
     include ./works/works.pug
     include ./lists/pubs.pug

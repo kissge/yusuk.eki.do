@@ -5,6 +5,7 @@
     url('../fonts/ZenKakuGothicNew-Light-subset.woff2') format('woff2'),
     url('../fonts/ZenKakuGothicNew-Light-subset.zopfli.woff') format('woff'),
     url('../fonts/ZenKakuGothicNew-Light-subset.ttf') format('truetype');
+  font-display: block;
   unicode-range: U+20, U+3042, U+3044, U+304D, U+3053, U+3059, U+305F, U+3060, U+3067, U+306B, U+306E, U+3076, U+307E,
     U+308B, U+3092, U+3093, U+30A2, U+30A4, U+30A6, U+30A8-30AB, U+30AF, U+30BA, U+30C8, U+30D0, U+30D7, U+30EB, U+30EC,
     U+30EF, U+30F3, U+30F4, U+30FC, U+4E16, U+4F1A, U+52D9, U+59D4, U+5F0F, U+682A, U+696D, U+6C7A, U+73FE, U+793E,
@@ -18,6 +19,7 @@
     url('../fonts/ZenKakuGothicNew-Regular-subset.woff2') format('woff2'),
     url('../fonts/ZenKakuGothicNew-Regular-subset.zopfli.woff') format('woff'),
     url('../fonts/ZenKakuGothicNew-Regular-subset.ttf') format('truetype');
+  font-display: block;
   unicode-range: U+20, U+3001, U+3002, U+300C, U+300D, U+3042, U+3044, U+3046, U+3048, U+304A-304D, U+304F, U+3051-3055,
     U+3057-305D, U+305F, U+3061, U+3063-306B, U+306E, U+306F, U+3072, U+3075, U+3079, U+307B, U+307E, U+3081, U+3082,
     U+3084, U+3087-308D, U+308F, U+3092, U+3093, U+30A1-30A4, U+30A6-30B1, U+30B3-30BB, U+30BD, U+30BF, U+30C1, U+30C3,
@@ -51,6 +53,7 @@
     url('../fonts/ZenKakuGothicNew-Black-subset.woff2') format('woff2'),
     url('../fonts/ZenKakuGothicNew-Black-subset.zopfli.woff') format('woff'),
     url('../fonts/ZenKakuGothicNew-Black-subset.ttf') format('truetype');
+  font-display: block;
   unicode-range: U+3044, U+304B, U+304C, U+3054, U+3057, U+3068, U+306A, U+3082, U+308A-308C, U+308F, U+30B3, U+30BF,
     U+30D4, U+30E5, U+30F3, U+30FC, U+56F0, U+FF1F;
 }
@@ -62,6 +65,7 @@
     url('../fonts/BarlowCondensed-Thin-subset.woff2') format('woff2'),
     url('../fonts/BarlowCondensed-Thin-subset.zopfli.woff') format('woff'),
     url('../fonts/BarlowCondensed-Thin-subset.ttf') format('truetype');
+  font-display: block;
   unicode-range: U+20, U+26, U+2C-2E, U+40, U+43-45, U+49, U+4C, U+4E-50, U+52-54, U+5F, U+61, U+63-69, U+6B-70, U+72-75,
     U+77, U+79;
 }
@@ -73,5 +77,6 @@
     url('../fonts/BarlowCondensed-Regular-subset.woff2') format('woff2'),
     url('../fonts/BarlowCondensed-Regular-subset.zopfli.woff') format('woff'),
     url('../fonts/BarlowCondensed-Regular-subset.ttf') format('truetype');
+  font-display: block;
   unicode-range: U+20, U+4B, U+59, U+64, U+65, U+69, U+6B, U+6F, U+73, U+75;
 }
