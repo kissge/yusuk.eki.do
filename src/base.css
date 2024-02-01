@@ -21,7 +21,7 @@ body {
   padding-bottom: 4rem;
   color: #112;
   background: url('wood.webp');
-  background-position: center center;
+  background-position: center top;
   background-size: contain;
 }
 
