@@ -130,8 +130,14 @@
   }
 }
 
-@media (width <=800px) {
+@media (width <= 800px) {
   .works {
+    h2 {
+      small {
+        display: inline-block;
+      }
+    }
+
     > li {
       display: block;
       padding: 1rem;
