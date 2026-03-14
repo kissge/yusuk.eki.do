@@ -33,7 +33,7 @@
   font-display: swap;
   unicode-range: U+3001, U+3002, U+300C, U+300D, U+3042, U+3044, U+3046, U+3048, U+304A-304D, U+304F, U+3051-3055,
     U+3057-305D, U+305F, U+3061, U+3063-306B, U+306E, U+306F, U+3072, U+3075, U+3079, U+307B, U+307E, U+3081, U+3082,
-    U+3084, U+3087-308D, U+308F, U+3092, U+3093, U+30A1-30A4, U+30A6-30B1, U+30B3-30BB, U+30BD, U+30BF, U+30C1, U+30C3,
+    U+3084, U+3087-308D, U+308F, U+3092, U+3093, U+30A1-30A4, U+30A6-30B1, U+30B3-30BB, U+30BD, U+30BF-30C1, U+30C3,
     U+30C4, U+30C6-30CB, U+30CD-30D7, U+30D9, U+30DC-30E3, U+30E5-30E7, U+30E9-30ED, U+30F3, U+30F4, U+30FB, U+30FC,
     U+4E00, U+4E0A, U+4E0E, U+4E2D, U+4E45, U+4E8B, U+4EAC, U+4EBA, U+4ECA, U+4ECB, U+4ED8, U+4EFB, U+4F01, U+4F1A,
     U+4F1D, U+4F53, U+4F55, U+4F5C, U+4F7F, U+4FA1, U+4FC2, U+4FEE, U+5024, U+5065, U+5165, U+5168, U+516C, U+51E6,
@@ -77,7 +77,7 @@
     url('../fonts/BarlowCondensed-Thin-subset.zopfli.woff') format('woff'),
     url('../fonts/BarlowCondensed-Thin-subset.ttf') format('truetype');
   font-display: block;
-  unicode-range: U+20, U+26, U+2C-2E, U+40, U+43-45, U+49, U+4C, U+4E-50, U+52-54, U+5F, U+61, U+63-69, U+6B-70, U+72-75,
+  unicode-range: U+20, U+26, U+2C-2E, U+40, U+43-46, U+49, U+4C, U+4E-50, U+52-54, U+5F, U+61, U+63-69, U+6B-70, U+72-75,
     U+77, U+79;
 }
 
